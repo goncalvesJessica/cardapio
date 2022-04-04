@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=" pt-br">
+
+</html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+    <img src="img/menu.png" id="banner">
+    <div class="menu">
+        <h1>Menu - Faça a sua escolha</h1>
+
+
+    </div>
+
+
+    <div class="box_blue">
+        <div class="box_text">
+            <h1>Pratos Principais.</i>
+            </h1>
+            <h2><strong>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</strong>
+            </h2>
+        </div>
+        <div class="box_blue_itens">
+            <div class="box_blue_2">
+                <img src="img/bife.png" alt="Bife" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Bife com batata</p>
+                    R$: <span class="price" id="bifePrice">25,00</span>
+                    <br>
+                    <button onclick="Menos('bife')">-</button>
+                    <span id="bife">0</span>
+                    <button onclick="Mais('bife')">+</button>
+                </div>
+            </div>
+            <div class="box_blue_2">
+                <img src="img/frango.png" alt="Frango" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Frango crocante</p>
+                    R$: <span class="price" id="frangoPrice">20,00</span>
+                    <br>
+                    <button onclick="Menos('frango')">-</button>
+                    <span id="frango">0</span>
+                    <button onclick="Mais('frango')">+</button>
+                </div>
+            </div>
+            <div class="box_blue_2">
+                <img src="img/feijoada.png" alt="Feijoada" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Feijoada</p>
+                    R$: <span class="price" id="feijoadaPrice">40,00</span>
+                    <br>
+                    <button onclick="Menos('feijoada')">-</button>
+                    <span id="feijoada">0</span>
+                    <button onclick="Mais('feijoada')">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box_blue">
+        <div class="box_text">
+            <h1>Acompanhamento</h1>
+            <h2><strong>Porçoes para uma pessoa</strong></h2>
+        </div>
+        <div class="box_blue_itens">
+            <div class="box_blue_2">
+                <img src="img/farofa.png" alt="farofa" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Farofa</p>
+                    R$: <span class="price" id="farofaPrice">13,00</span>
+                    <br>
+                    <button onclick="Menos('farofa')">-</button>
+                    <span id="farofa">0</span>
+                    <button onclick="Mais('farofa')">+</button>
+                </div>
+            </div>
+            <div class="box_blue_2">
+                <img src="img/salada.png" alt="salada" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Salada</p>
+                    R$: <span class="price" id="saladaPrice">11,00</span>
+                    <br>
+                    <button onclick="Menos('salada')">-</button>
+                    <span id="salada">0</span>
+                    <button onclick="Mais('salada')">+</button>
+                </div>
+            </div>
+            <div class="box_blue_2">
+                <img src="img/torresmo.png" alt="torresmo" class="image-food">
+                <div class="detail-food">
+                    <p class="title-food">Torresmo</p>
+                    R$: <span class="price" id="torresmoPrice">15,00</span>
+                    <br>
+                    <button onclick="Menos('torresmo')">-</button>
+                    <span id="torresmo">0</span>
+                    <button onclick="Mais('torresmo')">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box_blue">
+        <div class="box_text">
+            <h1>Dados Pessoais</h1>
+        </div>
+        <form>
+            <label class="form-control">Nome</label> <br>
+            <input type="text" placeholder="Nome" class="form-control" id="nome"><br>
+            <label class="form-control">Telefone</label> <br>
+            <input type="text" placeholder="(99) 99999-9999" class="form-control"><br>
+            <label class="form-control">Email</label> <br>
+            <input type="text" placeholder="exemplo@exemplo.com" class="form-control"><br>
+        </form>
+    </div>
+    <button onclick="Calcular()" class="calcular">Calcular</button>
+
+    <div id="info-pedido">
+        <p id="dear">
+        </p>
+        <p>Segue dados do seu pedido</p>
+
+        <p id="totalPrice"> </p>
+    </div>
+</body>
+
+</html>
